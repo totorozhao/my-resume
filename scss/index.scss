@@ -1,0 +1,70 @@
+@import "aside";
+@import "main";
+@import "pdf";
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+
+/*------------------CSS Reset-----------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+*::before {
+  box-sizing: border-box
+}
+
+*::after {
+  box-sizing: border-box
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  font: 14px/1.7 Helvetica, sans-serif;
+  color: #3A3B3F;
+  background: #FBFCFD;
+}
+
+input {
+  border-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container{
+  position: relative;
+}
+.wrap{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -3;
+  bottom: 0;
+  background: #3A3B3F;
+}

@@ -1,0 +1,258 @@
+.main{
+    margin-left: 220px;
+    color: #eee;
+    h1{
+        font-size: 45px;
+        color: #29dca9;
+    }
+    h3{
+        color: #29dca9;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 2;
+    }
+    section{
+        display: none;
+    }
+    .section-title{
+        text-align: center;
+        padding-top: 40px;
+        letter-spacing: 0.05em;
+    }
+    
+    //个人
+    .per-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        max-width: 960px;
+        margin: 0 auto;
+        h2{
+            font-size: 40px;
+            margin-bottom: 10px;
+            letter-spacing: 0.05em;
+        }
+        h4{
+            color: #eee;
+            font-size: 16px;
+            line-height: 2.5;
+        }
+        p{
+            margin-left: 20px;
+        }
+        strong{
+            color: #29dca9;
+            font-size: 16px;
+        }
+        .info-top{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-info{
+            margin-bottom: 40px;
+        }
+        .avatar{
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+        .job-detial{
+            margin-left: 50px;
+            text-align: center;
+            h4{
+                line-height: 1;
+            }
+        }
+        .icon-play{
+            margin-right: 5px;
+            color: #29dca9;
+            width: 25px;
+            height: 25px;
+            vertical-align: -0.4em;
+        }
+    }
+    //项目
+    .portfolio{
+        .projects{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            .project{
+                position: relative;
+                width: 600px;
+                margin-bottom: 42px;
+                overflow: hidden;
+                box-shadow: #3a3b3f 0 0 10px inset, hsla(0, 0%, 100%, 0.05) 10px 10px 20px;        
+                h3{
+                    padding: 12px 20px;
+                    z-index: 2;
+                    font-size: 16px;
+                }        
+                p{
+                    padding: 6px 20px;
+                    margin-left: 0;
+                    z-index: 2;
+                }
+                .icon-platform{
+                    width: 30px;
+                    height: 30px;
+                    vertical-align: -0.6em;
+                }
+                .icon-tech{
+                    width: 30px;
+                    height: 30px;
+                    margin: 8px 10px 8px 0;
+                }
+                img{
+                    width: 600px;
+                    height: 300px;
+                }
+                strong{
+                    font-size: 15px;
+                    color: #29dca9;
+                }
+                .pro-desc{
+                    border-bottom: 1px solid hsla(164, 68%, 44%, 0.15);
+                    padding: 10px 0;
+                }
+                .skill-icon{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    flex-wrap: nowrap;
+                    margin-left: 20px;
+                    .pro-link{
+                        padding: 5px 12px;
+                        .btn-pro{
+                            display: inline-block;
+                            border:1px solid #29dca9;
+                            padding: 5px 12px;
+                            border-radius: 20px;
+                        }
+                    }
+                }
+                .pro-bg{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    transform: scale(1.15);
+                    filter: blur(25px);
+                    background: url(../imgs/bg1.png);
+                }
+            }
+            
+        }
+        
+    }
+
+    //技能
+    .skills{
+        .skill-info{
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            position: relative;
+            .skill-list,.skill-list-sub{
+                margin: 20px 40px 20px 20px;
+            }
+            .skill{
+                margin-bottom: 20px;
+            }
+            .skill-des::before {
+                content: '- ';
+            }
+            &::after{
+                content: '1';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: -1;
+                -webkit-filter: blur(25px);
+                filter: blur(35px);
+                overflow: hidden;
+                background: url(../imgs/bg.jpg);
+                background-size: cover;
+            }
+        }
+        .skill-tags{
+            max-width: 530px;
+            margin: 30px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .skill-tag{
+                border: 2px solid #29dca9;
+                border-radius: 10px;
+                padding: 5px 12px;
+                margin: 8px 10px;
+                background: #3A3B3F;
+            }
+            .unuse{
+                border:2px solid hsla(164, 68%, 44%, 0.15);
+            }
+        }
+        .bg{
+            background: url(../imgs/bg.jpg);
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            z-index: -2;
+            background-size: cover;
+        }
+    }
+    //联系
+    .contact{
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: center;
+        padding: 30px;
+        max-width: 960px;
+        margin: 0 auto;
+        .info-img{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .info-icon{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            flex-wrap: wrap;
+        }
+
+        img{
+            display: inline-block;
+            margin: 10px 40px;
+            height: 230px;
+        }
+        .cnt{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        .icon-contact{
+            width: 45px;
+            height: 45px;
+            color: #29dca9;
+            margin-right: 20px;
+            vertical-align: -0.4em;
+        }
+    }
+}
